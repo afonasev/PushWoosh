@@ -1,7 +1,8 @@
 # Pushwoosh
-[![Build Status](https://travis-ci.org/Afonasev/pushwoosh.svg?branch=master)](https://travis-ci.org/Afonasev/pushwoosh)
-[![Code Climate](https://codeclimate.com/github/Afonasev/pushwoosh/badges/gpa.svg)](https://codeclimate.com/github/Afonasev/pushwoosh)
-[![Test Coverage](https://codeclimate.com/github/Afonasev/pushwoosh/badges/coverage.svg)](https://codeclimate.com/github/Afonasev/pushwoosh/coverage)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Afonasev/PushWoosh/edit/master/LICENSE)
+[![Build Status](https://travis-ci.org/Afonasev/PushWoosh.svg?branch=master)](https://travis-ci.org/Afonasev/pushwoosh)
+[![Code Climate](https://codeclimate.com/github/Afonasev/PushWoosh/badges/gpa.svg)](https://codeclimate.com/github/Afonasev/PushWoosh)
+[![Test Coverage](https://codeclimate.com/github/Afonasev/PushWoosh/badges/coverage.svg)](https://codeclimate.com/github/Afonasev/PushWoosh/coverage)
 
 ## Installing
 ```
