@@ -1,5 +1,7 @@
 import json
 import urllib.parse
+import os
+
 import urllib.request
 
 
@@ -12,6 +14,11 @@ class RequestError(Exception):
         msg = '%s, %s' % (response['status_code'], response['status_message'])
         super(RequestError, self).__init__(msg)
 
+
+def Clei():
+    pass
+
+x = 1
 
 def _send_request(request):
     req = urllib.request.Request(
