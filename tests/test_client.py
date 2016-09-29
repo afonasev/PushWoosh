@@ -23,7 +23,7 @@ class CreateMessageTestCase(TestCase):
             content=self.test_content,
             params=self.test_params,
             filters=self.test_filters,
-            request_sender=request_sender
+            _request_sender=request_sender
         )
 
         request = request_sender.call_args[0][0]
@@ -31,8 +31,8 @@ class CreateMessageTestCase(TestCase):
 
         assert notification['content'] == self.test_content
 
-        for name, op, value in notification['conditions']:
-            assert op == 'EQ'
+        for name, operator, value in notification['conditions']:
+            assert operator == 'EQ'
             assert value == self.test_filters[name]
 
         for k, v in self.test_params.items():
@@ -47,7 +47,7 @@ class CreateMessageTestCase(TestCase):
                 application=self.test_application,
                 auth_token=self.test_auth_token,
                 content=self.test_content,
-                request_sender=request_sender,
+                _request_sender=request_sender,
             )
 
 
