@@ -29,7 +29,7 @@ def create_message(
     content,
     params=None,
     filters=None,
-    request_sender=_send_request,
+    _request_sender=_send_request,
 ):
     """
     :type application: str
@@ -37,7 +37,7 @@ def create_message(
     :type content: dict[str, str]
     :type params: dict[str, Any]
     :type filters: dict[str, Any]
-    :type request_sender: callable
+    :type _request_sender: callable
     """
     request = {
         'request': {
@@ -49,7 +49,7 @@ def create_message(
         },
     }
 
-    response = request_sender(request)
+    response = _request_sender(request)
 
     if response['status_code'] != 200:
         raise RequestError(response)
@@ -76,9 +76,9 @@ def _make_conditions(filters):
 
     for k, v in filters.items():
         if isinstance(v, list):
-            op = 'IN'
+            operator = 'IN'
         else:
-            op = 'EQ'
-        conditions.append([k, op, v])
+            operator = 'EQ'
+        conditions.append([k, operator, v])
 
     return conditions

@@ -1,16 +1,15 @@
 language: python
 python:
-  - "3.3"
-  - "3.4"
   - "3.5"
 
 install:
-  - pip install pytest pytest-coverage codeclimate-test-reporter
-  - pip install flake8 flake8-import-order
+  - pip install . pytest pytest-coverage coveralls
+  - pip install flake8 flake8-import-order pylint
 
 script:
   - py.test --cov=pushwoosh
   - flake8
+  - pylint pushwoosh
 
 after_success:
-  - codeclimate-test-reporter
+  - coveralls
