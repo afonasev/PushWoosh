@@ -1,5 +1,5 @@
 # Pushwoosh
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Afonasev/PushWoosh/edit/master/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Afonasev/PushWoosh/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/Afonasev/PushWoosh.svg?branch=master)](https://travis-ci.org/Afonasev/pushwoosh)
 [![Coverage Status](https://coveralls.io/repos/github/Afonasev/PushWoosh/badge.svg?branch=master)](https://coveralls.io/github/Afonasev/PushWoosh?branch=master)
 
