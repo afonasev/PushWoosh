@@ -14,7 +14,7 @@ $ pip install git+https://github.com/Afonasev/pushwoosh
 >>> client = Clinet(auth_token='AUTH_TOKEN', application='APPLICATION_CODE')
 ```
 
-## Client api
+## API
 ```python
 
 class Client:
